@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas y Tablas</title>
+  </head>
+  <body>
+    <!-- Lista desordenada -->
+    <ul>
+      <li>Manzanas</li>
+      <li>Banana</li>
+      <li>Uvas</li>
+    </ul>
+
+    <!-- Lista ordenada -->
+    <ol>
+      <li>Departamento</li>
+      <li>Casas</li>
+      <li>Lotes</li>
+    </ol>
+
+    <!-- Lista de definicion -->
+    <dl>
+      <dt>HTML</dt>
+      <dd>
+        Lenguaje de marcado de hipertexto utilizado en la creación de sitios
+        web.
+      </dd>
+    </dl>
+
+    <dl>
+      <dt>CSS</dt>
+      <dd>
+        Lenguaje de hojas de estilo utilizado para dar estilo a los documentos
+        HTML.
+      </dd>
+    </dl>
+
+    <!-- Tablas básicas -->
+
+    <!--
+      <tr> representa una fila (table row) 
+      <th> define una celda de encabezado (table header) suele estar en negrita
+      <td> define una celda de datos (table data)  
+    -->
+    <table border="1">
+      <tr>
+        <th>Nombre</th>
+        <th>Edad</th>
+        <th>Ubicación</th>
+      </tr>
+
+      <tr>
+        <td>Carlos</td>
+        <td>25</td>
+        <td>Tucuman</td>
+      </tr>
+
+      <tr>
+        <td>Lucia</td>
+        <td>35</td>
+        <td>Misiones</td>
+      </tr>
+
+      <tr>
+        <td>Marta</td>
+        <td>25</td>
+        <td>Cordoba</td>
+      </tr>
+    </table>
+
+    <!-- Tabla mejorada -->
+
+    <!-- 
+      <thead> : encabezado de la tabla (titulos de columnas)
+      <tbody> : cuerpo de la tabla (datos principales)
+      <tfoot> : pie de la tabla (resumenes)
+    
+    -->
+    <br />
+
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Ubicación</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Carlos</td>
+          <td>25</td>
+          <td>Tucuman</td>
+        </tr>
+
+        <tr>
+          <td>Lucia</td>
+          <td>35</td>
+          <td>Misiones</td>
+        </tr>
+
+        <tr>
+          <td>Marta</td>
+          <td>25</td>
+          <td>Cordoba</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="2">total de personas</td>
+          <td>2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br />
+
+    <!-- Tablas avanzadas -->
+
+    <!-- 
+      atributos colspan y rowspan se utilizan dentro de las celdas <td> <th> para fusionar celdas
+        colspan: fusiona celdas horizontalmente
+        <td colspan = "n">contenido</td> donde n es el numero de columnas que ocupa la celda
+
+        colrow: fusiona celdas verticalmente
+        <td rowspan = "n">contenido</td> donde n es el numero de filas que ocupa la celda
+    
+    -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th colspan="2">Descripción</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td rowspan="2">Laptop</td>
+          <td>Marca</td>
+          <td>HP</td>
+          <td>$800.00</td>
+        </tr>
+
+        <tr>
+          <td>Procesador</td>
+          <td>Intel Core i7</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Smartphone</td>
+          <td colspan="2">Samsung galaxy S21</td>
+          <td>$700.00</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Lista Anidada -->
+    <ul>
+      <li>
+        comprar verduras
+        <ul>
+          <li>Leche</li>
+          <li>Pan</li>
+          <li>
+            Frutas
+            <ul>
+              <li>Manzana</li>
+              <li>Banana</li>
+              <li>Naranjas</li>
+            </ul>
+          </li>
+          <li>
+            verduras
+            <ul>
+              <li>Espinaca</li>
+              <li>Brócoli</li>
+              <li>Zanahorias</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>lavar auto</li>
+      <li>Hacer ejercicio</li>
+    </ul>
+  </body>
+</html>
