@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>campos formularios</title>
+  </head>
+  <body>
+    <h1>campos mas comunes en un formulario</h1>
+
+    <h2>campo de texto:</h2>
+    <p>Para ingresar datos breves como nombres, apellidos, ciudad</p>
+
+    <label for="nombre">Nombre:</label>
+    <input
+      type="text"
+      id="nombre"
+      name="nombre"
+      placeholder="Ingrese su nombre"
+    />
+
+    <h2>contraseña:</h2>
+    <p>Oculta el texto miestras se escribe</p>
+
+    <!-- contraseña -->
+    <label for="contrasena">Contraseña:</label>
+    <input
+      type="password"
+      id="contrasena"
+      name="contrasena"
+      placeholder="Ingrese contraseña"
+    />
+
+    <h2>Correo electronico:</h2>
+    <p>Acepta direcciones de email y puede validarlas automaticamente</p>
+
+    <!-- correo -->
+    <label for="correo">Correo:</label>
+    <input
+      type="email"
+      id="correo"
+      name="correo"
+      placeholder="Ingrese correo"
+    />
+
+    <h2>Numeros:</h2>
+    <p>Para ingresar solo valores numericos</p>
+
+    <!-- numero -->
+    <label for="cantidad">Cantidad: </label>
+    <input
+      type="number"
+      id="cantidad"
+      name="cantidad"
+      placeholder="Ingrese la cantidad"
+    />
+
+    <h2>Telefono:</h2>
+    <p>Para ingresar numeros telefinicos</p>
+
+    <!-- telefonico -->
+    <label for="cantidad">Telefono: </label>
+    <input type="tel" id="tel" name="tel" placeholder="Ingrese telefono" />
+
+    <h2>Fecha:</h2>
+    <p>Permite seleccionar una fecha desde un calendario</p>
+
+    <!-- fecha -->
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input
+      type="date"
+      id="fecha"
+      name="fecha"
+      placeholder="Ingrese la fecha nacimiento"
+    />
+
+    <h2>Botones de opcion:</h2>
+    <p>Permite seleccionar <strong>una sola</strong> opcion de varias</p>
+
+    <!-- botones de opcion -->
+    <label for="mayorEdad">¿Eres mayor de edad?</label>
+    <input type="radio" id="si" name="edad" value="si" />
+    <label for="si">Sí</label>
+    <input type="radio" id="no" name="edad" value="no" />
+    <label for="no">No</label>
+
+    <h2>Casilla de verificación:</h2>
+    <p>Permite seleccionar una o mas opciones</p>
+
+    <!-- casillas de verificacion tipo checkbox -->
+    <label for="">Seleciona tus intereses:</label>
+    <input type="checkbox" id="deporte" name="intereses" value="deporte" />
+    <label for="deporte">Deportes</label>
+    <input type="checkbox" id="musica" name="intereses" value="deporte" />
+    <label for="musica">Música</label>
+
+    <h2>Area de texto:</h2>
+    <p>Para textos mas largos como comentarios o descripciones</p>
+
+    <!-- Area de texto -->
+    <label for="comentarios">Comentarios:</label>
+    <textarea
+      name="comentarios"
+      id="comentarios"
+      cols="30"
+      rows="10"
+    ></textarea>
+
+    <h2>Lista desplegable:</h2>
+    <p>Muestra una lista de opciones para seleccionar una o varias</p>
+
+    <!-- tipo selector -->
+    <label for="pais">Pais:</label>
+    <select name="pais" id="pais">
+      <option value="">--Selecciona un pais--</option>
+      <option value="usa">Estados Unidos</option>
+      <option value="canada">Canada</option>
+    </select>
+
+    <br /><br />
+    <!-- tipo selector multiple -->
+    <label for="pais">Pais:</label>
+    <select name="pais" id="pais" multiple>
+      <option value="">--Selecciona un pais--</option>
+      <option value="usa">Estados Unidos</option>
+      <option value="canada">Canada</option>
+    </select>
+
+    <h2>Cargar archivos:</h2>
+    <p>Permite seleccionar una o varios archivos</p>
+
+    <!-- tipo archivos -->
+    <label for="archivos">Cargar Archivo</label>
+    <input type="file" id="archivos" name="archivo" />
+    <br />
+    <!-- tipo archivos multiple-->
+    <label for="archivos">Cargar varios Archivo</label>
+    <input type="file" id="archivos" name="archivo" multiple />
+
+    <h2>tipo color:</h2>
+    <p>Permite seleccionar un color</p>
+
+    <!-- tipo color -->
+    <label for="color">Color favorito</label>
+    <input type="color" id="color" name="color" />
+
+    <h2>Sitio web:</h2>
+    <p>Permite cargar un sitio web</p>
+
+    <!-- tipo web -->
+    <label for="sitio-web">Sitio web</label>
+    <input
+      type="url"
+      id="sitio-web"
+      name="sitio-web"
+      placeholder="http://www.ejemplo.com"
+    />
+
+    <h2>Boton de envio</h2>
+    <p>Envia los datos de formulario</p>
+
+    <!-- boton de envio -->
+    <input type="submit" value="Enviar con input" />
+    <input type="reset" value="Restablecer" />
+    <button type="submit">Enviar con button</button>
+
+    <hr />
+    <h1>FORMULARIO</h1>
+    <p>
+      Los campos de un formulario van dentro de una etiqueta
+      <strong>form</strong> porque esta etiqueta define el contexto del
+      formulario. Le dice al navegador que todos esos campos estan relacionados
+      y que deben enviarse juntos
+    </p>
+    <br />
+    <h2>Porque usamos la etiqueta form</h2>
+
+    <ol>
+      <li>Agrupar los campos</li>
+      <p>
+        Todos los que estan dentro de la etiqueta se considera parte del mismo
+        formulario
+      </p>
+
+      <li>Permite el envio de datos</li>
+      <p>
+        Al hacer click en el boton de tipo <strong>submit</strong>, el navegador
+        recopila los datos de todos los campos dentro de form y los envia a una
+        URL (servidor) que se define en el atributo <strong>action</strong>
+      </p>
+
+      <li>Manejo de metodos HTTP</li>
+      <p>
+        Puedes especificar como enviar los datos con el atributo
+        <strong>method:</strong>
+      </p>
+      <ul>
+        <li>
+          <strong>GET: </strong> envia los datos por URL(se ve en la barra de
+          navegacion).
+        </li>
+        <li>
+          <strong>POST: </strong> envia los datos de forma oculta (seguro para
+          contraseñas)
+        </li>
+      </ul>
+
+      <li>Integracion con validaciones</li>
+      <p>
+        El navegador aplica validaciones automaticas antes de enviar un
+        formulario
+      </p>
+    </ol>
+
+    <h2>Ejemplo:</h2>
+
+    <form action="procesador.php" method="post">
+      <!-- label : texto que se muestra antes del campo -->
+      <!-- input: caja de texto -->
+      <!-- placeholder: guia que coloco dentro del input -->
+
+      <!-- nombre -->
+      <label for="nombre">Nombre:</label>
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Ingrese su nombre"
+      />
+
+      <br />
+      <!-- contraseña -->
+      <label for="contrasena">Contraseña:</label>
+      <input
+        type="password"
+        id="contrasena"
+        name="contrasena"
+        placeholder="Ingrese contraseña"
+      />
+
+      <br />
+      <!-- correo -->
+      <label for="correo">Correo:</label>
+      <input
+        type="email"
+        id="correo"
+        name="correo"
+        placeholder="Ingrese correo"
+      />
+
+      <br />
+      <!-- numero -->
+      <label for="cantidad">Cantidad: </label>
+      <input
+        type="number"
+        id="cantidad"
+        name="cantidad"
+        placeholder="Ingree la cantidad"
+      />
+
+      <br />
+      <!-- fecha -->
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input
+        type="date"
+        id="fecha"
+        name="fecha"
+        placeholder="Ingrese la fecha nacimiento"
+      />
+
+      <br />
+      <!-- botones de opcion -->
+      <label for="mayorEdad">¿Eres mayor de edad?</label>
+      <input type="radio" id="si" name="edad" value="si" />
+      <label for="si">Sí</label>
+      <input type="radio" id="no" name="edad" value="no" />
+      <label for="no">No</label>
+
+      <br />
+      <!-- casillas de verificacion tipo checkbox -->
+      <label for="">Seleciona tus intereses:</label>
+      <input type="checkbox" id="deporte" name="intereses" value="deporte" />
+      <label for="deporte">Deportes</label>
+      <input type="checkbox" id="musica" name="intereses" value="deporte" />
+      <label for="musica">Música</label>
+
+      <br />
+      <!-- Area de texto -->
+      <label for="comentarios">Comentarios:</label>
+      <textarea
+        name="comentarios"
+        id="comentarios"
+        cols="30"
+        rows="10"
+      ></textarea>
+
+      <br />
+      <!-- tipo selector -->
+      <label for="pais">Pais:</label>
+      <select name="pais" id="pais">
+        <option value="">--Selecciona un pais--</option>
+        <option value="usa">Estados Unidos</option>
+        <option value="canada">Canada</option>
+      </select>
+
+      <br />
+      <!-- tipo selector multiple -->
+      <label for="pais">Pais:</label>
+      <select name="pais" id="pais" multiple>
+        <option value="">--Selecciona un pais--</option>
+        <option value="usa">Estados Unidos</option>
+        <option value="canada">Canada</option>
+      </select>
+    </form>
+  </body>
+</html>
