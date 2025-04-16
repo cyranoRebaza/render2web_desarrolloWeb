@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>div-span-clase-id</title>
+  </head>
+  <body>
+    <h1>Etiquetas div, section, article y span</h1>
+    <!-- div -->
+    <div>
+      <h2>Etiqueta div(división genérica)</h2>
+      <p>
+        Es un <strong>contenedor</strong> genérico que no tiene un significado
+        semántico propio, pero sirve para
+        <strong>organizar y estructurar</strong> el contenido
+      </p>
+    </div>
+
+    <!-- section -->
+    <section>
+      <h2>Etiqueta section (sección de contenido)</h2>
+      <p>
+        Etiqueta de bloque, sirve para agrupar contenido que forma parte de una
+        misma temática. dividir un articulo en secciones como "Introducción",
+        "contenido", "conclusion"
+      </p>
+    </section>
+
+    <article>
+      <h2>Etiqueta article (contenido independiente)</h2>
+      <p>
+        Etiqueta de bloque, que tiene sentido por si solo. por ejemplo:
+        noticias, publicaciones, comentarios
+      </p>
+    </article>
+
+    <!-- span -->
+    <h2>span (contenedor en linea)</h2>
+    <p>
+      Etiqueta en linea, sirve para aplicar estilos en linea a palabras o frases
+      dentro de un parrofo,
+      <span style="color: red"
+        >estoy dentro de un span con estilo color rojo</span
+      >
+    </p>
+
+    <hr />
+
+    <!-- class e id -->
+    <section>
+      <h2>Atributo class (clase)</h2>
+      <h3>Definición</h3>
+      <p>
+        Se usa para asignar uno o mas nombres de clase a un elemento, estos
+        nombres se pueden usar en CSS o JavaScript
+      </p>
+      <h3>Caracteristicas</h3>
+      <li>Se pueden repetir en muchos elementos</li>
+      <li>
+        un mismo elemento puede tener varias clases separadas por espacios
+      </li>
+      <h3>ejemplo</h3>
+      <style>
+        .rojo {
+          color: red;
+        }
+        .grande {
+          font-size: 30px;
+        }
+      </style>
+      <p class="rojo grande">Este parrafo es rojo y grande</p>
+    </section>
+
+    <section>
+      <h2>Atributo id (Identificador único)</h2>
+      <h3>Definición</h3>
+      <p>Se usa para dar un identificador único a un elemento</p>
+      <h3>Caracteristicas</h3>
+      <li>Debe ser unico dentro de toda la página</li>
+      <li>Identificar algo especifico, como una sección o botón</li>
+      <h3>ejemplo</h3>
+      <style>
+        #despedida {
+          font-weight: bold;
+          color: green;
+        }
+      </style>
+      <p id="despedida">Hola, gracias por visitarnos</p>
+    </section>
+  </body>
+</html>
