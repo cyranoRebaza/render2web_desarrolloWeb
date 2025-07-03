@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio y video</title>
+  </head>
+  <body>
+    <div><h1>Audio y video</h1></div>
+
+    <!-- Audio -->
+    <section>
+      <h2>Etiqueta audio</h2>
+      <p>Permite insertar y reproducir archivos de audio como MP3, OGG, WAV</p>
+
+      <!-- Estructura basica -->
+      <audio controls>
+        <source src="multimedia/audio1.mp3" type="audio/mpeg" />
+        <source src="multimedia/audio1.mp3" type="audio/ogg" />
+        <source src="multimedia/audio1.mp3" type="audio/wap" />
+        Tu navegador no admite audio HTML5
+      </audio>
+
+      <h2>Partes</h2>
+      <ul>
+        <li>
+          &lt;audio&gt;
+          <ul>
+            <li>Elemento contenedor del audio</li>
+            <li>
+              Pueden añadir atributos como:
+              <ul>
+                <li>
+                  <strong>controls:</strong> Muestra los controles de
+                  reproduccion
+                </li>
+                <li>
+                  <strong>autoplay:</strong> Empieza a cargar el audio al cargar
+                  la pagina
+                </li>
+                <li><strong>muted:</strong> comienza en silencio</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          &lt;source&gt;
+          <ul>
+            <li>
+              Define un archivo de audio disponible en un formato especifico
+            </li>
+            <li>
+              Atributos:
+              <ul>
+                <li><strong>src:</strong> ruta de archivo</li>
+                <li><strong>type:</strong> tipo MIME del archivo</li>
+              </ul>
+            </li>
+            <li>
+              Puedes añadir varios &lt;source&gt; para dar compatibilidad con
+              distintos navegadores
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Video -->
+    <section>
+      <h2>Etiqueta Video</h2>
+      <p>Permite insertar y reproducir archivos de video como MP4, WebM, OGV</p>
+
+      <!-- Estructura basica -->
+
+      <video width="320" height="240" controls>
+        <source src="multimedia/video1.mp4" type="video/mp4" />
+        <source src="multimedia/video1.webm" type="video/webm" />
+        <source src="multimedia/video1.ogv" type="video/ogv" />
+        Tu navegador no admite video HTML5
+      </video>
+
+      <h2>Partes</h2>
+
+      <ul>
+        <li>
+          &lt;video&gt;
+          <ul>
+            <li>Elemento contenedor de video</li>
+            <li>
+              Atributos comunes:
+              <ul>
+                <li>
+                  <strong>width</strong> y <strong>height: </strong> Dimensiones
+                  del reproductor
+                </li>
+                <li>
+                  <strong>controls:</strong>Muestra los controles de
+                  reproduccion
+                </li>
+                <li></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          &lt;source&gt;
+          <ul>
+            <li>Define las distintas fuentes de video para compatibilidad</li>
+            <li>
+              Atributos:
+              <ul>
+                <li><strong>src:</strong> ruta de archivo de video</li>
+                <li><strong>type:</strong> tipo MIME del archivo</li>
+              </ul>
+            </li>
+            <li>
+              Puedes añadir varios &lt;source&gt; para dar compatibilidad con
+              distintos navegadores
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
