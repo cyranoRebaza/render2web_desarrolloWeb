@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>script y noscript</title>
+  </head>
+  <body>
+    <h1>Etiqueta script y noscript</h1>
+
+    <!-- script -->
+    <section>
+      <h2>Etiqueta script</h2>
+      <p>
+        La etiqueta <strong>script</strong> sirve para inscrustar codigo
+        JavaScript en un documento HTML o para enlazar un archivo externo de
+        JavaScript
+      </p>
+
+      <ul>
+        <li>
+          para que se usa:
+          <ul>
+            <li>Agregar interactividad a la pagina</li>
+            <li>Ejecutar codigo al cargarse el documento</li>
+            <li>Manipular el DOM, realizar validaciones</li>
+          </ul>
+        </li>
+
+        <li>
+          formar de usarlo:
+          <ul>
+            <li>Codigo JavaScript embebido en el HTML</li>
+            <script>
+              alert("Hola soy una alert");
+            </script>
+            <li>Enlazar un archivo JavaScript externo</li>
+            <script src="main.js"></script>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- noscript -->
+    <section>
+      <h2>Etiqueta noscript</h2>
+      <p>
+        La etiqueta <strong>noscript</strong> sirve para mostrar contenido
+        alternativo a los usuarios
+      </p>
+
+      <ul>
+        <li>
+          para que se usa:
+          <ul>
+            <li>cuando tienen desactivado JavaScript en su navegador</li>
+            <li>usan un navegador que no soporta js</li>
+          </ul>
+        </li>
+
+        <li>
+          para que sirve:
+          <ul>
+            <li>Informar al usuario que necesita habilitar JS</li>
+            <li>
+              Ofrecer contenido basico en caso de que JS este desabilitado
+            </li>
+          </ul>
+          <noscript>
+            <p style="color: red">
+              Este sitio requiere JavaScript para funcionar correctamente. Por
+              favor, habilítalo en tu navegador.
+            </p>
+          </noscript>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
