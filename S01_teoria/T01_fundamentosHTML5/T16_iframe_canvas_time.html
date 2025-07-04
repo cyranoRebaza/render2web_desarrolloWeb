@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Iframe-Canvas-Time</title>
+  </head>
+  <body>
+    <!-- iframe -->
+    <section>
+      <h2>Etiqueta iframe</h2>
+      <p>
+        La etiqueta <strong>iframe</strong>(inline frame) sirve para incustrar
+        otro documento HTML dentro de la pagina actual como si fuera una ventana
+        o marco. se puede mostrar videos de youtube, mapas de google
+      </p>
+
+      <h2>Ejemplo:</h2>
+      <div>
+        <h2>Incrustar un mapa de Google Maps</h2>
+        <iframe
+          src="https://maps.google.com/maps?q=Eiffel%20Tower&t=&z=15&output=embed"
+          width="600"
+          height="400"
+          title="Mapa de la Torre Eiffel"
+        ></iframe>
+      </div>
+      <h2>Atributos principales:</h2>
+      <div>
+        <ul>
+          <li><strong>src:</strong>URL de la pagina o recurso a incrustrar</li>
+          <li><strong>width y height:</strong>tamaño del iframe en px</li>
+          <li>
+            <strong>title:</strong>Descripcion del contenido(accesibilidad)
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- canvas -->
+    <section>
+      <h2>Etiqueta canvas</h2>
+      <p>
+        La etiqueta <strong>canvas</strong> es un lienzo vacio que permite
+        dibujar graficos dinamicos usando JavaScript
+      </p>
+
+      <h2>Ejemplo con JavaScript:</h2>
+      <div>
+        <canvas id="miCanvas" width="300" height="150"
+          >Tu navegador no soporta canvas.</canvas
+        >
+
+        <script>
+          const canvas = document.getElementById("miCanvas");
+          const ctx = canvas.getContext("2d");
+          ctx.fillStyle = "blue";
+          ctx.fillRect(50, 50, 200, 75); // Dibuja un rectángulo azul
+        </script>
+      </div>
+      <h2>Atributos principales:</h2>
+      <div>
+        <ul>
+          <li>
+            <strong>id:</strong>identificador para manipular el canvas con
+            JavaScript
+          </li>
+          <li><strong>width y height:</strong>tamaño del lienzo en px</li>
+        </ul>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- time -->
+    <section>
+      <h2>Etiqueta time</h2>
+      <p>
+        La etiqueta <strong>time</strong>representa una fecha u hora en HTML,
+        con el objetivo de dar sentido semantico a datos temporales, para que
+        los motores de busqueda, calendarios procecen correctamente las fechas y
+        horas
+      </p>
+
+      <h2>Ejemplos practicos:</h2>
+      <div>
+        <ul>
+          <li>
+            Fecha:
+            <p>Evento: <time datetime="2025-07-02">2 de julio de 2025</time></p>
+          </li>
+          <li>
+            Hora:
+            <p>Horario: <time datetime="14:00">2:00 PM</time></p>
+          </li>
+          <li>
+            Fecha y hora combinada
+            <p>
+              <time datetime="2025-07-02T14:00"
+                >2 de julio de 2025, 2:00 PM</time
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+      <h2>Atributos principales:</h2>
+      <div>
+        <ul>
+          <li>
+            <strong>datetime:</strong>valor legible por maquinas que representan
+            la fecha y hora
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
