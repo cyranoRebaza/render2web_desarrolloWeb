@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=Te, initial-scale=1.0" />
+    <title>Etiquetas semanticas</title>
+  </head>
+  <body>
+    <section>
+      <h2>Que son las etiquetas semanticas</h2>
+      <p>
+        Son etiquetas de HTML que
+        <strong>decriben el significado del contenido que envuelven</strong>
+      </p>
+      <ul>
+        <li>
+          Ayudan a navegadores, motores de busqueta, lectores de pantalla y
+          otros agentes a comprender la estructura y funcion de las distintas
+          partes de una pagina
+        </li>
+        <li>
+          Mejora la <strong>accesibilidad,</strong> el SEO y la mantenibilidad
+          del codigo
+        </li>
+        <li>Antes se usaban solo div</li>
+      </ul>
+
+      <h2>Etiquetas semanticas mas utilizadas</h2>
+      <ul>
+        <li>
+          <strong>&lt;header&gt;:</strong> Encabezado de un documento o seccion
+        </li>
+        <li>
+          <strong>&lt;footer&gt;:</strong>Pie de pagina de un documento o
+          seccion
+        </li>
+        <li>
+          <strong>&lt;main&gt;:</strong> Contenido principal y unico de la
+          pagina
+        </li>
+        <li><strong>&lt;nav&gt;:</strong> Area con enlaces de navegacion</li>
+        <li><strong>&lt;section&gt;:</strong> Seccion tematica de la pagina</li>
+        <li>
+          <strong>&lt;article&gt;:</strong> Contenido independiente y
+          autocontenible, como una noticia o comentario
+        </li>
+        <li>
+          <strong>&lt;aside&gt;:</strong> Contenido relacionado o
+          complementario, como anuncios, notas
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <hr />
+      <h2>Ejemplo con etiquetas semanticas</h2>
+      <hr />
+
+      <!-- Encabezado -->
+      <header>
+        <h1>blog Personal</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Articulos</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- main -->
+      <main>
+        <article>
+          <header>
+            <h2>Titulo del articulo 1</h2>
+            <p><time datetime="2025-07-02">2 de julio de 2025</time></p>
+          </header>
+          <section>
+            <p>Este es el contenido principal del articulo 1</p>
+          </section>
+        </article>
+
+        <article>
+          <header>
+            <h2>Titulo del articulo 2</h2>
+            <p><time datetime="2025-07-03">3 de julio de 2025</time></p>
+          </header>
+          <section>
+            <p>Este es el contenido principal del articulo 2</p>
+          </section>
+        </article>
+
+        <aside>
+          <h3>Sobre el autor</h3>
+          <p>Breve descripcion o enlaces relacionados</p>
+        </aside>
+
+        <aside>
+          <h3>Barra lateral</h3>
+          <figure>
+            <img src="imagenes/mountain-8251186_640.jpg" alt="montaña" />
+          </figure>
+        </aside>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <p>&copy; 2025 Mi blog. Todos los derechos reservados</p>
+      </footer>
+    </section>
+  </body>
+</html>
