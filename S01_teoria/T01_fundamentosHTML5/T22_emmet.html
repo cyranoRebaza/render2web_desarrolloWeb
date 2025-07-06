@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmet</title>
+  </head>
+  <body>
+    <section>
+      <h1>Atajos Emmet para html</h1>
+    </section>
+
+    <!-- HTML -->
+    <section>
+      <h2>HTML</h2>
+      <p>
+        Con emmet puedo crear rapidamente una plantilla HTML. En un archivo
+        HTML, escribir <strong><mark>!</mark></strong> seguido de
+        <strong><mark>TAB</mark></strong>
+      </p>
+    </section>
+
+    <!-- etiquetas basicas -->
+    <section>
+      <h2>Etiquetas basicas</h2>
+      <p>
+        Para crear etiquetas HTML basicas, escribimos el nombre de la etiqueta y
+        presionamos <mark>ENTER</mark>
+      </p>
+      <ul>
+        <li><strong>div:</strong> contedor</li>
+        <li><strong>p:</strong> parrafo</li>
+        <li><strong>ul:</strong> lista desordenada</li>
+        <li><strong>li:</strong> lista ordenada</li>
+        <li><strong>a:</strong> enlace</li>
+        <li><strong>bq:</strong> para blockquote</li>
+        <li><strong>hdr:</strong> para header</li>
+        <li><strong>ftr:</strong> para footer</li>
+        <li><strong>btn:</strong> para botton</li>
+        <li><strong>sect:</strong> para una seccion</li>
+      </ul>
+    </section>
+
+    <!-- clases  y id-->
+    <section>
+      <h2>clases y id</h2>
+      <p>Para referirse a las clases emmet usa el punto <mark>.</mark></p>
+      <ul>
+        <li>
+          <strong>div.wrapper</strong> div con una clase wrapper
+          <div class="wrapper"></div>
+        </li>
+      </ul>
+      <p>Para referirse a los id emmet usa el numeral <mark>#</mark></p>
+      <ul>
+        <li>
+          <strong>div#hero</strong> div con un id hero
+          <di id="hero"></di>
+        </li>
+      </ul>
+    </section>
+
+    <!-- hermanos-->
+    <section>
+      <h2>Hermanos</h2>
+      <p>Para referirse a etiquetas hermanos <mark>+</mark></p>
+      <ul>
+        <li>
+          <strong>h1+h2+h3</strong> etiquetas al mismo nivel
+          <h1></h1>
+          <h2></h2>
+          <h3></h3>
+        </li>
+      </ul>
+    </section>
+
+    <!-- hijos(anidados)-->
+    <section>
+      <h2>anidados</h2>
+      <p>Para referirse a etiquetas hijos o aninados <mark>></mark></p>
+      <ul>
+        <li>
+          <strong>ul>li</strong> etiquetas li es hijo de ul
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li>
+          <strong>na>ul>li*3</strong>
+          <na>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </na>
+        </li>
+      </ul>
+    </section>
+
+    <!-- escalonado -->
+    <section>
+      <h2>escalonado</h2>
+      <p>
+        querermos que la etiqueta blockquote estuviera al mismo nivel que el
+        parrafo. por eso vamos a trepar con <mark>^ (alt + 94)</mark>
+      </p>
+      <ul>
+        <li>
+          <strong>div+div>p>span+em^bq</strong>
+          <div></div>
+          <div>
+            <p><span></span><em></em></p>
+            <blockquote></blockquote>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- agrupar -->
+    <section>
+      <h2>agrupar</h2>
+      <p>
+        crearemos un encabezado y un pie de pagina usando parentesis
+        <mark> ( )</mark>
+      </p>
+      <ul>
+        <li>
+          <strong>div>(header>ul>li>a)+footer>p</strong>
+        </li>
+      </ul>
+
+      <div>
+        <header>
+          <ul>
+            <li><a href=""></a></li>
+          </ul>
+        </header>
+        <footer>
+          <p></p>
+        </footer>
+      </div>
+    </section>
+
+    <!-- multiplicacion y $ -->
+    <section>
+      <h2>multiplicacion y $</h2>
+      <p>
+        Podemos usar multiples etiquetas multiplicando (*) y numerando elementos
+        en secuencia usando el signo del dolar ($)
+      </p>
+
+      <p>sin numeracion: <strong>ul>li*5</strong></p>
+      <!-- ul>li*5 -->
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <p>con numeracion: <strong>ul>li.item$$$*5</strong></p>
+      <!-- ul>li.item$$$*5 -->
+      <ul>
+        <li class="item001"></li>
+        <li class="item002"></li>
+        <li class="item003"></li>
+        <li class="item004"></li>
+        <li class="item005"></li>
+      </ul>
+
+      <p>comience con un numero especifico: <strong>ul>li.item$@3*5</strong></p>
+      <!-- ul>li.item$@3*5 -->
+      <ul>
+        <li class="item3"></li>
+        <li class="item4"></li>
+        <li class="item5"></li>
+        <li class="item6"></li>
+        <li class="item7"></li>
+      </ul>
+
+      <p>direccion inversa: <strong>ul>li.item$@-*5</strong></p>
+      <!-- ul>li.item$@-*5 -->
+      <ul>
+        <li class="item5"></li>
+        <li class="item4"></li>
+        <li class="item3"></li>
+        <li class="item2"></li>
+        <li class="item1"></li>
+      </ul>
+
+      <p>
+        direccion inversa desde un numero especifico:
+        <strong>ul>li.item$@-3*5</strong>
+      </p>
+      <!-- ul>li.item$@-3*5 -->
+      <ul>
+        <li class="item7"></li>
+        <li class="item6"></li>
+        <li class="item5"></li>
+        <li class="item4"></li>
+        <li class="item3"></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>lorem ipsum</h2>
+      <p>
+        crear 10 palabras de texto aleatorio:
+        <strong>lorem10</strong>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, nihil.
+      </p>
+    </section>
+
+    <hr />
+  </body>
+</html>
