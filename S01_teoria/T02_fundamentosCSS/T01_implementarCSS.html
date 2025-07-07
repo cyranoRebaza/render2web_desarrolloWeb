@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Implementar CSS</title>
+    <!-- 2 forma: internal - etiqueta style en el head-->
+    <style>
+      h3 {
+        color: blue;
+        font-size: 25px;
+      }
+    </style>
+
+    <!-- 3 forma: externa - archivo externo con un link en el head -->
+    <link rel="stylesheet" href="css/T01_estilo_externo.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Formas de implementar CSS</h1>
+      <p>Existen <strong>3 formas </strong>de aplicar estilos a HTML</p>
+    </header>
+
+    <section>
+      <h2>1. En linea (Inline css)</h2>
+      <p>
+        Se escribe directamente en la etiqueta HTML, usando el atributo
+        <mark>style</mark>
+      </p>
+      <!-- 1 forma: inline - etiqueta style en la misma linea-->
+      <h2>Ejemplo:</h2>
+      <p style="color: brown; font-size: 20px">
+        Hola mundo con etiqueta style en la misma linea
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>2. Interno o enbebido (Internal css)</h2>
+      <p>
+        Se coloca dentro de una etiqueta <mark>style</mark> en el
+        <strong>head</strong> del documento HTML
+      </p>
+      <!-- 2 forma: internal - etiqueta style en el head-->
+      <h2>Ejemplo:</h2>
+      <h3>Hola mundo con etiqueta style enbebido en el head</h3>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>3. Externo (External css)</h2>
+      <p>
+        Se define en un archivo aparte por Ejemplo, <mark>estilos.css</mark> y
+        se enlaza con el HTML mediante un etiqueta <strong>link</strong> en el
+        <strong>head</strong>
+      </p>
+
+      <!-- 3 forma: externa - archivo externo con un link en el head -->
+      <h2>Ejemplo:</h2>
+      <h4>Hola mundo con un archivo externo con link en el head</h4>
+    </section>
+  </body>
+</html>
