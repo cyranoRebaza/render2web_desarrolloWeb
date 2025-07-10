@@ -1,0 +1,46 @@
+/* Selector universal (*) */
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+/* Selectores de tipo o etiqueta */
+h1 {
+  font-size: 48px;
+  color: brown;
+}
+
+/* Selectores de clase (.) */
+.ejemplo_clase {
+  border: 1px solid gray;
+}
+
+/* Selector de id (#) */
+#ejemplo_id {
+  border: 2px solid blue;
+}
+
+/* Selector de grupo (,) */
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
+}
+
+/* Selector descendente (espacio) */
+div p {
+  color: blueviolet;
+}
+
+ul li {
+  list-style: square;
+  padding: 10px;
+  border: 1px solid blue;
+}
+
+/* Selector de hijos directos */
+ol > li {
+  list-style: square;
+  padding: 10px;
+  border: 1px solid red;
+}

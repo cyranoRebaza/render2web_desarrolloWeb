@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link:css -->
+    <link rel="stylesheet" href="css/T02_selectoresBasicos.css" />
+    <title>Selectores basicos css</title>
+  </head>
+  <body>
+    <h1>Selectores basicos CSS</h1>
+
+    <!-- Selector universal (*) -->
+    <section>
+      <h2>Selector Universal (*)</h2>
+      <p>Selecciona todos los elementos del documento</p>
+      <ul>
+        <li>
+          Se usa para hacer un <strong>reset</strong> o establecer reglas
+          genereales
+        </li>
+        <li>
+          <mark
+            >Se usa al principio del archivo css por lo general es el margin y
+            padding en cero</mark
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!-- Selector de tipo o etiqueta -->
+    <section>
+      <h2>Selectores de tipo (o etiqueta)</h2>
+      <p>
+        Aplica estilos a todas las <strong>etiquetas o elementos</strong> de un
+        tipo especifico
+      </p>
+      <ul>
+        <li>aplica a todos los &lt;p&gt; del documento</li>
+      </ul>
+
+      <h3>Ejemplo:</h3>
+      <p>
+        El ejemplo es el tituto h1 con color brown y tamaño de fuente de 48px
+      </p>
+    </section>
+
+    <!-- Selector de clase (.) -->
+    <section>
+      <h2>Selector de clase (.)</h2>
+      <p>
+        Se usa para aplicar estilos a elementos con un atributo
+        <strong>class</strong>
+      </p>
+      <ul>
+        <li>
+          aplica a cualquier elemento con <strong>class="ejemplo_clase"</strong>
+        </li>
+        <li>Se puede reutilizar en muchos elementos</li>
+      </ul>
+
+      <h3>Ejemplo:</h3>
+      <div class="ejemplo_clase">
+        Este es un ejemplo con selector de clase con un borde 1px solido color
+        gray
+      </div>
+    </section>
+
+    <!-- Selector de ID (#) -->
+    <section>
+      <h2>Selector de ID (#)</h2>
+      <p>
+        Se usa para aplicar estilos a un UNICO elemento con un atributo
+        <strong>id</strong>
+      </p>
+      <ul>
+        <li>aplica solo al elemento con <strong>id="ejemplo_id"</strong></li>
+        <li>El id debe ser unico en la pagina</li>
+      </ul>
+
+      <h3>Ejemplo:</h3>
+      <div id="ejemplo_id">
+        Este es un ejemplo con selector de id, por lo general se usa en etiqueta
+        h1 ya que es unico en cada pagina gray
+      </div>
+    </section>
+
+    <!-- Selector de grupo (,) -->
+    <section>
+      <h2>Selector de grupo (,)</h2>
+      <p>
+        Aplica el mismo estilo a <strong>multiples selectores</strong> separados
+        por
+        <strong>coma</strong>
+      </p>
+
+      <h3>Ejemplo:</h3>
+      <p>
+        vamos a estilizar los encabezados h2, h3 a la vez con una familia de
+        fuente y color verde
+      </p>
+    </section>
+
+    <!-- Selector descendente (espacio) -->
+    <section>
+      <h2>Selector descendente (espacio)</h2>
+      <p>
+        Selecciona un elemento dentro de otro (todo elemento anidado que tiene
+        realacion padre-hijo/nieto)
+      </p>
+
+      <h4>Ejemplo:</h4>
+      <div>
+        <p>estiliza el parrafo que esta dentro del div</p>
+      </div>
+    </section>
+
+    <!-- Selector de hijos directos -->
+    <section>
+      <h2>Selector de hijos directos</h2>
+
+      <h4>Ejemplo:</h4>
+      <ul>
+        <li>elemento 1</li>
+        <li>
+          elemento 2
+          <ol>
+            <li>elemento 2.1</li>
+            <li>elemento 2.2</li>
+          </ol>
+        </li>
+        <li>elemento 3</li>
+      </ul>
+    </section>
+  </body>
+</html>
