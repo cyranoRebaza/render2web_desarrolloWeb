@@ -38,7 +38,7 @@ ul li {
   border: 1px solid blue;
 }
 
-/* Selector de hijos directos */
+/* Selector de hijos directos (>) */
 ol > li {
   list-style: square;
   padding: 10px;
