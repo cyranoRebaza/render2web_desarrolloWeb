@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/T03_pseudo_classElemAtri.css" />
+    <title>Pseudo Clases elementos y atributos</title>
+  </head>
+  <body>
+    <section>
+      <h1>Pseudo clases pseudo elementos y atributos</h1>
+    </section>
+
+    <!-- pseudo clases -->
+    <section>
+      <h2>Pseudo clases (:)</h2>
+      <p>
+        Una pseudo clase selecciona elementos en un
+        <strong
+          >estado o posicion, es decir cuando el mouse se coloca sobre ellos.
+          comunmente se utiliza para estilizar enlaces</strong
+        >
+      </p>
+
+      <h2>tipos mas comunes</h2>
+
+      <ul>
+        <li>
+          <strong>:hover</strong> cuando el mouse pasa por encima del elemento
+        </li>
+        <li>
+          <strong>:focus</strong> cuando un elemento esta enfocado (por tecla o
+          click)
+        </li>
+        <li><strong>:first-child</strong> si es el primer hijo de su padre</li>
+        <li><strong>:last-child</strong> si es el ultimo hijo de su padre</li>
+        <li>
+          <strong>:nth-child(n)</strong> si es el hijo numero n de su padre
+        </li>
+      </ul>
+    </section>
+
+    <!-- pseudo elementos -->
+    <section>
+      <h2>Pseudo elementos (::)</h2>
+      <p>
+        Un pseudo elemento permite utilizar
+        <strong>partes especificas de un elemento</strong>
+      </p>
+
+      <h2>tipos mas comunes</h2>
+
+      <ul>
+        <li><strong>::before</strong> Inserta contenido antes del elemento</li>
+        <li><strong>::after</strong> Inserta contenido despues del elemento</li>
+        <li>
+          <strong>::first-letter</strong> Selecciona la primera letra del texto
+        </li>
+        <li>
+          <strong>::first-line</strong> Selecciona la primera linea del texto
+        </li>
+        <li>
+          <strong>::placeholder</strong> Estiliza el tecto de un placeholder en
+          un input
+        </li>
+      </ul>
+    </section>
+    <!-- selectores de atributos -->
+    <section>
+      <h2>Selectores de atributos ([])</h2>
+      <p>
+        Permite aplicar estilos a los elementos que tienen atributos especificos
+        o valores determinados
+      </p>
+    </section>
+
+    <hr />
+    <!-- ejemplo 1-->
+    <section>
+      <h2>Ejemplo 1</h2>
+
+      <p>
+        Este parrafo tiene una primera letra estilizada y un simbolo añadido al
+        final.
+      </p>
+
+      <ul>
+        <li>Primer item</li>
+        <li>Segundo item</li>
+        <li>Tercer item(ultimo)</li>
+      </ul>
+
+      <a href="https://openai.com">Enlace a OpenAI</a><br />
+      <a href="http://otro.com">Enlace sin https</a>
+
+      <br /><br />
+
+      <input type="text" placeholder="Escribe aquí..." />
+    </section>
+
+    <hr />
+    <!-- ejemplo 2 -->
+    <section>
+      <h2>Ejemplo 2</h2>
+
+      <div class="caja1">caja</div>
+    </section>
+  </body>
+</html>

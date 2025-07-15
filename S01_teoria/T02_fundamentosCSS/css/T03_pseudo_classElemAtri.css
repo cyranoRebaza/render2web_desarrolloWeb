@@ -1,0 +1,76 @@
+/* ----- Ejemplo 1 ----- */
+/* selectores por atributo */
+a[href^="https://"]
+{
+  color: green;
+  text-decoration: none;
+}
+input[type="text"] {
+  border: 2px solid gray;
+  padding: 5px;
+}
+
+/* pseudo clases */
+a:hover {
+  color: red;
+}
+
+input:focus {
+  border-color: blue;
+  background-color: #e0f0ff;
+}
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  color: gray;
+}
+
+/* odd: los item impares */
+li:nth-child(odd) {
+  background-color: red;
+  color: white;
+}
+
+/* even: los item pares */
+li:nth-child(even) {
+  background-color: green;
+}
+
+/* pseudo elementos */
+p::first-letter {
+  font-size: 200%;
+  color: navy;
+}
+
+/* p::before {
+  content: "*";
+  color: orange;
+} */
+
+p::after {
+  content: "***";
+  color: orange;
+}
+
+input::placeholder {
+  color: darkgray;
+  font-style: italic;
+}
+
+/* ----- ejemplo 2 ----- */
+.caja1 {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+}
+
+.caja1:hover {
+  background-color: red;
+}
+
+.caja1:active {
+  background-color: green;
+}
