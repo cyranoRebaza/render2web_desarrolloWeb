@@ -1,0 +1,38 @@
+/* --- ejemplo de especificidad --- */
+
+h3 {
+  color: blue;
+} /*especificidad: 1 */
+
+.texto {
+  color: red;
+} /*especificidad: 10 */
+
+#destacado {
+  color: green;
+} /*especificidad: 100 */
+
+/* --- ejemplo de cascada --- */
+h4 {
+  color: red;
+}
+h4 {
+  color: blue;
+}
+
+/* --- ejemplo de !important --- */
+h5 {
+  color: red !important;
+}
+h5 {
+  color: blue;
+}
+
+/* --- ejercicio --- */
+#parrafo {
+  color: red;
+}
+
+.texto {
+  color: green;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/T04_reglas_precedencia.css" />
+    <title>Reglas precedencia</title>
+  </head>
+  <body>
+    <section>
+      <h1>Reglas de precedencia</h1>
+    </section>
+
+    <section>
+      <h2>Especificidad</h2>
+      <p>
+        Es una <strong>puntuacion</strong> que se asigna segun el tipo de
+        selector. Mientras mas <mark>especifico, mas prioridad tiene</mark>
+      </p>
+
+      <ul>
+        <li>Estilo en linea ------------ valor: 1000</li>
+        <li>ID (#id) ------------------- valor: 100</li>
+        <li>Clase (.clase) ------------- valor: 10</li>
+        <li>Atributo ([type="text"]) --- valor: 10</li>
+        <li>Pseudo clase (:hover) ------ valor: 10</li>
+        <li>Etiquetas (div, p) --------- valor: 1</li>
+        <li>Universal (*) -------------- valor: 0</li>
+      </ul>
+
+      <h2>Ejemplo:</h2>
+      <h3 id="destacado" class="texto">
+        El texto sera verde porque #destacado tiene mayor especificidad
+      <h3/>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Orden de aparicion (cascada)</h2>
+      <p>si dos reglas tiene la misma especificidad, gana la que esta <strong>mas abajo en el css</strong></p>
+
+      <h2>Ejemplo:</h2>
+      <h4>El color sera azul, porque esa regla aparece despues</h4>
+    </section>
+
+    <hr>
+
+<section>
+  <h2>¡Important!</h2>
+  <p>Sobreescribe todo, excepto <mark>otro !importat</mark> con mayor especificidad</p>
+
+  <h2>Ejemplo:</h2>
+  <h5>aunque <mark>#titulo</mark> tiene mas especificidad, el <mark>!Important</mark> gana; el color sera rojo</h5>
+</section>
+
+<hr>
+
+<section>
+  <h2>Ejercicio: De que color se vera el texto</h2>
+  <p id="parrafo" class="texto" style="color: orange;">Hola mundo</p>
+
+  <p>NOTA: como el estilo en linea tiene especificidad 1000, gana siempre, a menos que haya un !Important mas especifico</p>
+</section>
+
+
+  </body>
+</html>
