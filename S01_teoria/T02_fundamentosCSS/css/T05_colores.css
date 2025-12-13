@@ -1,0 +1,46 @@
+body {
+  background-color: grey;
+}
+h1 {
+  text-decoration: underline;
+}
+
+/* valores - por nombres de colorees */
+.nombre-color {
+  color: white;
+  background-color: brown;
+}
+
+/* valores - hexadecimales #RRGGBB - (RojoVerdeAzul) */
+.hexa-largo {
+  color: #00ff00;
+}
+
+.hexa-abreviado {
+  color: #0f0;
+}
+
+/* rgb - (red,green,blue) van de 0 a 255 */
+.rgb-valores {
+  color: rgb(0, 0, 0);
+}
+
+/* rgba - (red,green,blue,alpha) van de 0 a 255, alpha 0 a 1*/
+.rgba-transparencia {
+  color: rgb(230, 14, 111, 0.4);
+}
+
+/* hsla - (hue,saturation,lightness) van de 0 a 255 */
+.hsl-valores {
+  color: hsla(240, 100%, 50%, 0.75);
+}
+
+/* hsla - (hue,saturation,lightness, transparent) van de 0 a 255, alpha 0 a 1*/
+.hsl-valores {
+  color: hsla(240, 100%, 50%, 0.75);
+}
+
+.ejemplo-currentcolor {
+  color: purple; /* define el color del texto, por herencia el borde*/
+  border: 2px solid currentColor; /*el borde sera del mismo purpura que el texto*/
+}
